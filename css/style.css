@@ -1,0 +1,544 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Odibee Sans', sans-serif;
+    background-color: #333;
+}
+/*BARRA DE MENU*/
+.menu{
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+}
+
+.menu ul li{
+    width: 150px;
+    float: left;
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+.menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: purple;
+}   
+
+.menu ul ul li{
+    float: none;
+    
+} 
+
+label[for="bt-menu"]{
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    display: none;
+}
+
+#bt-menu{
+    display: none;
+}
+
+
+@media(max-width: 800px){
+    label[for="bt-menu"]{
+        display: block;
+    }
+    .menu{
+        margin-top: 5px;
+        margin-left: -100%;
+        transition: all .4s;
+    }
+    #bt-menu:checked ~ .menu{
+        margin-left: 0;
+    }
+    .menu ul li{
+        width: 100%;
+        float: none;
+    }  
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-width: 0;
+        transition: all .4s;
+    }
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+}
+
+
+/* classes utilitarias*/
+.text-primary{
+    color: purple;
+}
+
+/*showcase*/
+#showcase{
+    height: 100vh;
+    color: lightgray
+}
+
+#showcase .showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*content*/
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.box{
+    margin: 50px;
+}
+
+#box-1b{
+    background: url(../prints/basic-information/advanced\ node\ tapping.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2b{
+    background: url(../prints/basic-information/desconstruction\ table.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3b{
+    background: url(../prints/basic-information/master\ node\ tapping.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4b{
+    background: url(../prints/basic-information/node\ in\ a\ jar.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5b{
+    background: url(../prints/basic-information/node\ preserver.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6b{
+    background: url(../prints/basic-information/research\ duplication.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7b{
+    background: url(../prints/basic-information/research\ expertise.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8b{
+    background: url(../prints/basic-information/research\ mastery.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+.contet{
+    border-top: 5px solid;
+    background: #383333;
+    display: flex;
+    position: absolute;
+}
+/*thaumaturgy*/
+#box-1t{
+    background: url(../prints/thaumaturgy/boots\ of\ traveler.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2t{
+    background: url(../prints/thaumaturgy/cepters-.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3t{
+    background: url(../prints/thaumaturgy/focal\ manipulator.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4t{
+    background: url(../prints/thaumaturgy/golden\ wand\ caps.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5t{
+    background: url(../prints/thaumaturgy/greatwood\ wand\ cap.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6t{
+    background: url(../prints/thaumaturgy/harnessing\ vis.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7t{
+    background: url(../prints/thaumaturgy/node\ stabilizar.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8t{
+    background: url(../prints/thaumaturgy/silverwood\ wand.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-9t{
+    background: url(../prints/thaumaturgy/staves-.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-10t{
+    background: url(../prints/thaumaturgy/thaumium\ caps.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-11t{
+    background: url(../prints/thaumaturgy/vis\ storage.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-12t{
+    background: url(../prints/thaumaturgy/wand\ foci.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-13t{
+    background: url(../prints/thaumaturgy/wand\ focus\ equal\ trade.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-14t{
+    background: url(../prints/thaumaturgy/wand\ focus\ excavation.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-15t{
+    background: url(../prints/thaumaturgy/wand\ focus\ portable\ hole.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-16t{
+    background: url(../prints/thaumaturgy/wand\ focus\ warding.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-17t{
+    background: url(../prints/thaumaturgy/wand\ focus\ nine\ hells.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+/*alchemy*/
+#box-1a{
+    background: url(../prints/alchemy/nitor.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2a{
+    background: url(../prints/alchemy/alumentum-.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3a{
+    background: url(../prints/alchemy/alembic-.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4a{
+    background: url(../prints/alchemy/automated\ alchemy.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5a{
+    background: url(../prints/alchemy/bottled\ taint.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6a{
+    background: url(../prints/alchemy/essentia\ centrifuge.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7a{
+    background: url(../prints/alchemy/essentia\ cristalization.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8a{
+    background: url(../prints/alchemy/ethereal\ bloom.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-9a{
+    background: url(../prints/alchemy/liquid\ death.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-10a{
+    background: url(../prints/alchemy/magic\ tallow.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-11a{
+    background: url(../prints/alchemy/magical\ metal.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-12a{
+    background: url(../prints/alchemy/metal\ purification.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-13a{
+    background: url(../prints/alchemy/metal\ transmutation.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-14a{
+    background: url(../prints/alchemy/purifying\ bath\ salts.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-15a{
+    background: url(../prints/alchemy/sanitizing\ soap.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+/*artifice*/
+#box-1ar{
+    background: url(../prints/artfice/arcane\ bore.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2ar{
+    background: url(../prints/artfice/arcane\ ear.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3ar{
+    background: url(../prints/artfice/arcane\ levitator.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4ar{
+    background: url(../prints/artfice/axe\ of\ the\ stream.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5ar{
+    background: url(../prints/artfice/bone\ bow.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6ar{
+    background: url(../prints/artfice/brain\ in\ a\ jar.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7ar{
+    background: url(../prints/artfice/googles\ of\ revealing.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8ar{
+    background: url(../prints/artfice/hoe\ of\ growth.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-9ar{
+    background: url(../prints/artfice/infernal\ furnace.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-10ar{
+    background: url(../prints/artfice/infusion-.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-11ar{
+    background: url(../prints/artfice/infusion\ enchantment.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-12ar{
+    background: url(../prints/artfice/lamp\ of\ fertility.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-13ar{
+    background: url(../prints/artfice/pickaxe\ of\ the\ core.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-14ar{
+    background: url(../prints/artfice/primal\ arrows.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-15ar{
+    background: url(../prints/artfice/runic\ shielding.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-16ar{
+    background: url(../prints/artfice/runic\ shielding\ augmentation.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-17ar{
+    background: url(../prints/artfice/shovel\ of\ the\ earthmover.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-18ar{
+    background: url(../prints/artfice/sinister\ lodestone.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-19ar{
+    background: url(../prints/artfice/sword\ of\ the\ zephyr.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-20ar{
+    background: url(../prints/artfice/thaumium\ fortress\ armour.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-21ar{
+    background: url(../prints/artfice/thaumostatic\ harness.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-22ar{
+    background: url(../prints/artfice/wand\ pedestal.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-23ar{
+    background: url(../prints/artfice/warded\ arcana.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+/*golemancy*/
+#box-1g{
+    background: url(../prints/golemancy/advanced\ golens.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2g{
+    background: url(../prints/golemancy/flesh\ golens.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3g{
+    background: url(../prints/golemancy/golem\ core\ decanting.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4g{
+    background: url(../prints/golemancy/golem\ core\ guard.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5g{
+    background: url(../prints/golemancy/golem\ core\ harvest.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6g{
+    background: url(../prints/golemancy/golem\ core\ use.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7g{
+    background: url(../prints/golemancy/straw\ golens.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8g{
+    background: url(../prints/golemancy/tallow\ golens.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-9g{
+    background: url(../prints/golemancy/thaumium\ golens.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-10g{
+    background: url(../prints/golemancy/traveling\ trunk.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+/*eldrych*/
+#box-1e{
+    background: url(../prints/eldrich/advanced\ essentia\ storage.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-2e{
+    background: url(../prints/eldrich/opening\ the\ eye.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-3e{
+    background: url(../prints/eldrich/primal\ crusher.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-4e{
+    background: url(../prints/eldrich/sanity\ check.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-5e{
+    background: url(../prints/eldrich/staff\ core\ of\ the\ primal.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-6e{
+    background: url(../prints/eldrich/void\ meta\ caps.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-7e{
+    background: url(../prints/eldrich/void\ metal.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
+#box-8e{
+    background: url(../prints/eldrich/wand\ focus\ primal.png)no-repeat;
+    height: 230px;
+    width: 256px;
+}
